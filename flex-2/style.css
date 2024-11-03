@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    
+
+}
+
+
+.navbar .mobile{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a{
+    color: red;
+}
+@media (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+        
+}
+    .nav-links{
+        display: none;
+
+}
+
+}
+
+@media (min-width: 601px){
+    .navbar .mobile{
+        display: none;
+}
+}
